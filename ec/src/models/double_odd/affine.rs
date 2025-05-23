@@ -116,7 +116,7 @@ impl<P: DOCurveConfig> Zeroize for Affine<P> {
 }
 
 impl<P: DOCurveConfig> Distribution<Affine<P>> for Standard {
-    /// Generates a uniformly random instance of the curve.
+    /// Generates a uniformly random point in the prime-order subgroup.
     #[inline]
     fn sample<R: Rng + ?Sized>(&self, rng: &mut R) -> Affine<P> {
         loop {
