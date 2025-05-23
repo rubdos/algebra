@@ -1,4 +1,4 @@
-//! This module implements the R1CS equivalent of `ark_secp256r1`.
+//! This module implements the R1CS equivalent of `ark_jq255s`.
 
 mod curves;
 mod fields;
